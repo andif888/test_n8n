@@ -1,15 +1,15 @@
-#!/bin/bash -uex
+---
+devicetrust_version: "20.2.200"
+devicetrust_policydefinitions_zip: "dtpolicydefinitions-{{ devicetrust_version }}.0.zip"
 
-devicetrust_version="20.2.200"
+devicetrust_console_install_file: "dtconsole-x64-release-{{ devicetrust_version }}.0.msi"
+devicetrust_console_product_id: '{C629BD24-90FB-4265-8645-5DCBB9D192E6}'
 
-if [ -d "/tmp/deviceTRUST" ]; then
-  rm -rf /tmp/deviceTRUST
-fi
+devicetrust_host_install_file: "dthost-x64-release-{{ devicetrust_version }}.0.msi"
+devicetrust_host_product_id: '{DC0A6464-7F12-465E-8DB7-051EFF547403}'
 
-if [ -f "/tmp/deviceTRUST.zip" ]; then
-  rm -f /tmp/deviceTRUST.zip
-fi
+devicetrust_client_install_file: "dtclient-release-{{ devicetrust_version }}.0.exe"
+devicetrust_client_product_id: '{972C9426-D393-4312-A336-AC08634E2102}'
 
-wget --progress=bar:force -O /tmp/deviceTRUST.zip 'https://storage.devicetrust.com/download/deviceTRUST-$devicetrust_version.zip'
+devicetrust_demotool_install_file: "dtdemotool-release-{{ devicetrust_version }}.0.exe"
 
-unzip /tmp/deviceTRUST.zip -d /tmp/deviceTRUST/
