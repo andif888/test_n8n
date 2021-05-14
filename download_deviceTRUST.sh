@@ -1,6 +1,6 @@
 #!/bin/bash -uex
 
-devicetrust_version="20.2.200"
+devicetrust_version="20.2.330"
 
 if [ -d "/tmp/deviceTRUST" ]; then
   rm -rf /tmp/deviceTRUST
