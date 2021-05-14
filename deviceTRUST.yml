@@ -1,5 +1,5 @@
 ---
-devicetrust_version: "20.2.200"
+devicetrust_version: "20.2.330"
 devicetrust_policydefinitions_zip: "dtpolicydefinitions-{{ devicetrust_version }}.0.zip"
 
 devicetrust_console_install_file: "dtconsole-x64-release-{{ devicetrust_version }}.0.msi"
